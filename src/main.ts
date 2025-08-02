@@ -9,7 +9,7 @@ async function bootstrap() {
   const PORT = Number(process.env.PORT) || 8080;
 
   app.enableCors({
-    origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
   });
